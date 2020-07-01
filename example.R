@@ -13,7 +13,7 @@ Burnin = 20
 Niter = 100
 thin = 5
 mcmc <- main_mcmc(Data=simulated_data, Burnin,Niter,thin)
-# predicttion
+# prediction
 x_new <- simulated_data$X[10,]
 z_new <- simulated_data$Z[10,]
 depression_prob_predict(mcmc, z_new, x_new)
